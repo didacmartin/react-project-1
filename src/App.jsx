@@ -1,15 +1,16 @@
-import React from 'react'; // Importa React (necesario para JSX)
+import MealCard from './components/MealCard';
 
 function App() {
-  const greeting = '¡Hola desde React!'; // Variable JS
-  return (
-    <div className="App">
-      <h1>{greeting}</h1> {/* Usa {} para JS dentro de HTML */}
-      <h2>caca</h2>
-      <p>Este es mi primer componente funcional.</p>
-      <button onClick={() => alert('¡Botón clickeado!')}>Haz click</button>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Buscador de Comidas</h1>
+            <MealCard
+                image="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
+                title="Spaghetti Carbonara"
+                description="Un clásico plato italiano hecho con pasta, huevos, queso parmesano, panceta y pimienta negra."
+            />
+        </div>
+    );
 }
 
-export default App; // Exporta para usarlo en index.js
+export default App;
